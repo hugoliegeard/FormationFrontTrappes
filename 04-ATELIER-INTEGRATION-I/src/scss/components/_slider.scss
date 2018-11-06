@@ -1,0 +1,19 @@
+.c-slider {
+    // &__slide {}
+    &__nav {
+        width: 34rem;
+        position: absolute;
+        top: 0;
+        left: 17rem;
+        @include linear-gradient($white, $gray--light);
+    }
+}
+
+.l-page-content {
+    .c-slider {
+        &__nav {
+            width: 100%;
+            background: inherit !important;
+        }
+    }
+}
