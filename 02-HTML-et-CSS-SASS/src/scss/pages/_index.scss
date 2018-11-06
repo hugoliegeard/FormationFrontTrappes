@@ -1,0 +1,37 @@
+/* ------------------------------------------------
+            --- Section | Contenu du Site
+---------------------------------------------------*/
+
+section {
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    height: auto;
+    float: left;
+    h1 {
+        font-family: $ff-primary;
+        text-align: center;
+        font-weight: normal;
+        border-bottom: .1rem dashed #000;
+    }
+    aside {
+        /* -- Dimension & Positionnement -- */
+        width: calc(100% / 2);
+        float: left;
+        img {
+            max-width: 100%;
+        }
+    }
+    article {
+        /* -- Dimension & Positionnement -- */
+        width: calc(100% / 2);
+        float: left;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        text-align: justify;
+        font-family: $ff-secondary;
+        font-size: $fs-smallest;
+        p strong {
+            color: $clr-primary;
+        }
+    }
+}

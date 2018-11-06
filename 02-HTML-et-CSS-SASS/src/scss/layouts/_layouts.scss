@@ -1,0 +1,48 @@
+/* ------------------------------------------------
+    --- Layout | Mise en page de la balise "<main>"
+---------------------------------------------------
+
+    1 - Je souhaite définir la largeur de ma page à 960px
+    2 - Je souhaite que mon contenu soit centré au milieu
+    3 - Le fond doit être de couleur blanche
+    4 - Je souhaite rajouter une marge top/bottom de 40px
+    5 - Avec la propriété border-radius, ajoutez un arrondi de 5px
+    6 - Grâce à box-shadow, ajoutez une ombre légère autour du "main"
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem => 10px */
+    font-size: 62.5%;
+    /* 
+    ou font-size: 100%; 1rem => 16px
+    */
+}
+
+body {
+    background-color: rgba(238, 238, 238, 0.075);
+    /* background: url(../img/fond.jpg) no-repeat; */
+    background-size: cover;
+}
+
+main {
+    width: 960px;
+    /* margin: <top/bottom> <left/right> */
+    margin: 8rem auto;
+    /* margin: <top> <right> <bottom> <left> */
+    /* margin: 80px auto 80px auto; */
+    background-color: #FFF;
+    /* Pour ajouter un arrondi à mon élément */
+    /* border-radius: 10px; */
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    /* Overflow avec la valeur hidden, va cacher
+    tous les éléments qui dépassent de la balise "main" */
+    overflow: hidden;
+    box-shadow: 0px 0px 1.5rem #d6d6d6;
+    padding: .5rem;
+}

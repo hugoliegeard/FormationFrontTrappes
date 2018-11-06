@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+// -- J'importe mes variables du fichier _variables.scss
+@import 'helpers/variables';
+
+// -- J'importe ma feuille de réinitialisation ou normalize
+@import 'base/base';
+
+// -- j'importe mon layout, ma structure principale
+@import 'layouts/layouts';
+
+// -- j'importe mes components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/navigation';
+
+// -- j'importe mes pages
+@import 'pages/index';
+
+

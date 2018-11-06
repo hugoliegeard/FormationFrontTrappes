@@ -1,0 +1,74 @@
+/* ------------------------------------------------
+            --- Footer | Pied de Page
+---------------------------------------------------*/
+
+footer {
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    float: left;
+    background-color: #121315;
+    padding: 1rem;
+    section {
+        &:first-child {
+            width: calc(100% / 3);
+            float: left;
+        }
+        &:nth-child(2) {
+            width: calc( (100% / 3) - 1rem);
+            margin-left: 1rem;
+            float: left;
+            fieldset {
+                font-family: $ff-primary;
+                border-radius: 8px;
+                font-size: $fs-small;
+                border: .2rem solid #FFF;
+                color: #FFF;
+                height: 180px;
+            }
+        }
+        &:last-child {
+            width: calc(100% / 3);
+            float: left;
+            font-family: $ff-primary;
+            h3 {
+                text-align: center;
+                font-weight: normal;
+                color: #FFF;
+                font-size: $fs-base;
+            }
+        }
+    }
+    form input {
+        width: calc(100% - 2rem);
+        height: 2.5rem;
+        border: 0;
+        margin-bottom: .5rem;
+        padding: .5rem 1rem;
+        /* box-sizing: border-box; */
+        &[type=submit] {
+            width: 100%;
+            height: 3.5rem;
+            margin-top: 1rem;
+            border: 0;
+            background-color: #FFF;
+            font-size: $fs-base;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+    address {
+        color: #FFF;
+        font-style: normal;
+        padding-left: 4rem;
+        strong {
+            font-size: $fs-large;
+        }
+        a {
+            color: #FFF;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

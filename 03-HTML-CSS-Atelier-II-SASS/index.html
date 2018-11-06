@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permet d'initialiser le zoom des navigateurs à 100% utile pour le RWD. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bloquer la compatibilité IE : https://bit.ly/2p43XaE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Feuilles de Styles -->
+    <link rel="stylesheet" href="./dist/css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <title>ISEN : Ecole d'Ingénieur</title>
+</head>
+<body>
+    <div class="page center">
+
+        <!-- #### | HEADER | #### -->
+        <header class="c-header">
+            <p class="c-header__title">ISEN : All is Digital - Ecole d'Ingéniérie Informatique</p>
+            <div class="nav-customer">
+                <p>
+                    Espace Clients :
+                    <a href="#">Connexion</a> | <a href="#">Inscription</a>
+                </p>
+            </div>
+            <div class="nav-main">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="./dist/img/isen-groupe.jpg" alt="Logo ISEN">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="index.html">Accueil</a></li>
+                        <li><a href="presentation.html">Présentation</a></li>
+                        <li><a href="#">Nos Formations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- /.nav-main -->
+        </header>
+    </div> <!-- /.page -->
+
+    <!-- #### | PROJECTEUR | #### -->
+    <div class="projecteur">
+        <img src="./dist/img/bandeauDuHaut.jpg" alt="Découvrir ISEN">
+    </div>
+
+    <!-- #### | CONTENT | #### -->
+    <div class="page center">
+        <section>   
+            <aside>
+                <img src="./dist/img/apprentissage.jpg" alt="Apprentissage à l'ISEN">
+            </aside>
+            <article>
+                <h3>Devenez Ingénieur ISEN</h3>
+                <p>Les formations d’ingénieur en alternance au sein de l’ISEN peuvent se faire en contrat d’apprentissage ou en contrat de professionnalisation. Dans les deux cas, l’étudiant bénéficie d’un contrat de travail avec l’entreprise qui l’accueille, d’une rémunération et d’une prise en charge du coût de sa formation.</p>
+                <p><strong>Contrats d'apprentissage</strong></p>
+                <p>Les 3 campus de Lille, Brest et Toulon proposent des formations par l'apprentissage. Retrouvez ces formations et les conditions d'admissions directement sur les pages des campus.</p>
+            </article>
+        </section>
+
+        <!-- #### | PARTENAIRES | #### -->
+        <section class="partners">
+            <h2>Nos Partenaires</h2>
+            <ul>
+                <li><img src="./dist/img/logos/cp11.jpg" alt="Logo 1"></li>
+                <li><img src="./dist/img/logos/fond_norbert_segard.jpg" alt="Logo 2"></li>
+                <li><img src="./dist/img/logos/frenchtech.jpg" alt="Logo 3"></li>
+                <li><img src="./dist/img/logos/logo_cge_web.jpg" alt="Logo 4"></li>
+            </ul>
+        </section>
+    </div> <!-- /.page -->
+
+    <!-- #### | FOOTER | #### -->
+
+    <footer>
+        <div class="page center">
+            <!-- Google Maps -->
+            <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d614.6501996998304!2d3.048813763835655!3d50.63374314392794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d578da129f7d%3A0xd134d73fb7f4c699!2sISEN+Lille!5e0!3m2!1sfr!2sfr!4v1537797986889"
+                    width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+
+            <!-- Inscription à la Newsletter -->
+            <section>
+                <form name="NomDuFormulaire" method="POST" action="FichierChargerDuTraitementDesDonnees.php">
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <input type="email" placeholder="Saisissez votre email.">
+                        <input type="text" placeholder="Saisissez votre prenom.">
+                        <input type="text" placeholder="Saisissez votre nom.">
+                        <input type="submit" value="M'inscrire !">
+                    </fieldset>
+                </form>
+            </section>
+
+            <!-- Coordonnées de Contact -->
+            <section>
+                <h3>Contactez-nous</h3>
+                <address>
+                    <strong>ISEN</strong><br>
+                    <a href="tel:+33320304050">03 20 30 40 50</a><br>
+                    <a href="mailto:contact@isen.fr">contact(@)isen.fr</a><br>
+                    41 Boulevard VAUBAN <br>
+                    59000 Lille <br>
+                    FRANCE
+                </address>
+            </section>
+        </div> <!-- /.page -->
+    </footer>
+
+</body>
+</html>

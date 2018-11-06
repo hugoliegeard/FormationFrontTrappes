@@ -1,0 +1,23 @@
+html {
+    font-size: 62.5%; /* 1rem => 10px */
+}
+
+body {
+    background-color: map-get($colors, background);
+}
+
+.page {
+    width: 100%;
+    max-width: 100rem;
+}
+
+.center {
+    /*
+        Pour centrer un élément de type "block" 
+    */
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}

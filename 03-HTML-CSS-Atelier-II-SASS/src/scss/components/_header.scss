@@ -1,0 +1,89 @@
+header {
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    float: left;
+    & > p {
+        font-family: map-get($fonts, roboto);
+        font-size: map-get($fonts-size, small);
+        text-align: left;
+        color: map-get($colors, light);
+    }
+    .nav-customer {
+        /* -- Dimension & Positionnement -- */
+        width: 100%;
+        height: 3rem;
+        float: left;
+
+        /* -- Décoration -- */
+        @include linear-gradient(map-get($colors, light), map-get($colors, secondary));
+        border-top-right-radius: .5rem;
+        p {
+            font-family: map-get($fonts, roboto);
+            font-size: map-get($fonts-size, smaller);
+            text-align: right;
+            color: map-get($colors, dark);
+            margin: 0 1rem 0 0;
+            line-height: 3rem;
+        }
+        a {
+            color: map-get($colors, primary);
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .nav-main {
+        /* -- Dimension & Positionnement -- */
+        width: 100%;
+        height: 10rem;
+        float: left;
+        /* -- Décoration -- */
+        background-color: map-get($colors, light);
+
+        .nav-logo {
+            /* -- Dimension & Positionnement -- */
+            width: 20%;
+            float: left;
+            /* -- Décoration -- */
+            a {}
+            img {
+                margin: 2.5rem 0;
+            }
+        }
+        nav {
+            /* -- Dimension & Positionnement -- */
+            width: auto;
+            float: right;
+            /* -- Décoration -- */
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                margin: 0 3rem;
+                &.current a {
+                    color: map-get($colors, primary );
+                }
+            }
+            a {
+                color: map-get($colors, dark);
+                font-family: map-get($fonts, roboto);
+                font-size: map-get($fonts-size, big);
+                line-height: 9.5rem;
+                text-decoration: none;
+                &:hover {
+                    color: map-get($colors, primary );
+                }
+            }
+        }
+    }
+}
+
+.c-header {
+    width: 90%;
+    &__title {
+        color: red;
+    }
+}

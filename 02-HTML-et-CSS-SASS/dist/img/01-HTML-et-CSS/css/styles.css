@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+/* ------------------------------------------------
+    --- Layout | Mise en page de la balise "<main>"
+---------------------------------------------------
+
+    1 - Je souhaite définir la largeur de ma page à 960px
+    2 - Je souhaite que mon contenu soit centré au milieu
+    3 - Le fond doit être de couleur blanche
+    4 - Je souhaite rajouter une marge top/bottom de 40px
+    5 - Avec la propriété border-radius, ajoutez un arrondi de 5px
+    6 - Grâce à box-shadow, ajoutez une ombre légère autour du "main"
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem => 10px */
+    font-size: 62.5%;
+    /* 
+    ou font-size: 100%; 1rem => 16px
+    */
+}
+
+body {
+    background-color: #EEE;
+    /* background: url(../img/fond.jpg) no-repeat; */
+    background-size: cover;
+}
+
+main {
+    width: 960px;
+    /* margin: <top/bottom> <left/right> */
+    margin: 8rem auto;
+    /* margin: <top> <right> <bottom> <left> */
+    /* margin: 80px auto 80px auto; */
+    background-color: #FFF;
+    /* Pour ajouter un arrondi à mon élément */
+    /* border-radius: 10px; */
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    /* Overflow avec la valeur hidden, va cacher
+    tous les éléments qui dépassent de la balise "main" */
+    overflow: hidden;
+    box-shadow: 0px 0px 1.5rem #d6d6d6;
+    padding: .5rem;
+}
+
+
+/* ------------------------------------------------
+    --- Header | Mise en page de la balise "<nav>"
+---------------------------------------------------
+
+    1 - Tous les liens sont en noir
+    2 - Les liens ne sont pas souligné
+    3 - Ils sont affichés en ligne grâce à la propriété "display"
+    4 - Ils sont centré sur la page
+    5 - Vous pouvez attribuer une couleur au passage de la souris (hover).
+    6 - Pareil pour le ".current"
+    7 - Vous utiliserez une police différente. Par ex. Roboto Condensed
+
+*/
+
+header {
+    width: 100%;
+    height: 359px;
+    background: url(../img/bandeau-isen.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 4rem;
+}
+
+nav a {
+    /* Le mot clé de la couleur */
+    color: black;
+    /* Notation Hexadécimale */
+    color: #000000;
+    color: #000;
+    /* Notation Décimale */
+    color: rgb(0, 0, 0);
+    /* Gérer le soulignement du texte */
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+nav a:hover {
+    color: #DD0613;
+}
+
+nav .current a {
+    color: #DD0613;
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------
+            --- Section | Contenu du Site
+---------------------------------------------------*/
+
+section {
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+section h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: .1rem dashed #000;
+}
+
+section aside {
+    /* -- Dimension & Positionnement -- */
+    width: calc(100% / 2);
+    float: left;
+}
+
+section aside img {
+    max-width: 100%;
+}
+
+section article {
+    /* -- Dimension & Positionnement -- */
+    width: calc(100% / 2);
+    float: left;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+
+
+/* section article p {} */
+
+section article p strong {
+    color: #DD0613;
+}
+
+
+/* ------------------------------------------------
+            --- Footer | Pied de Page
+---------------------------------------------------*/
+
+footer {
+    /* -- Dimension & Positionnement -- */
+    width: 100%;
+    float: left;
+    background-color: #121315;
+    padding: 1rem;
+}
+
+
+/* Ma div gmap */
+
+footer section:first-child {
+    width: calc(100% / 3);
+    float: left;
+}
+
+
+/* Ma newsletter */
+
+footer section:nth-child(2) {
+    width: calc( (100% / 3) - 1rem);
+    margin-left: 1rem;
+    float: left;
+}
+
+footer section:nth-child(2) fieldset {
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    border: .2rem solid #FFF;
+    color: #FFF;
+    height: 180px;
+}
+
+form input {
+    width: calc(100% - 2rem);
+    height: 2.5rem;
+    border: 0;
+    margin-bottom: .5rem;
+    padding: .5rem 1rem;
+    /* box-sizing: border-box; */
+}
+
+form input[type=submit] {
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 1rem;
+    border: 0;
+    background-color: #FFF;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Coordonnées de contact */
+
+footer section:last-child {
+    width: calc(100% / 3);
+    float: left;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer section:last-child h3 {
+    text-align: center;
+    font-weight: normal;
+    color: #FFF;
+    font-size: 1.6rem;
+}
+
+footer address {
+    color: #FFF;
+    font-style: normal;
+    padding-left: 4rem;
+}
+
+footer address strong {
+    font-size: 2rem;
+}
+
+footer address a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer address a:hover {
+    text-decoration: underline;
+}

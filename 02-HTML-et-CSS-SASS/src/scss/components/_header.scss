@@ -1,0 +1,26 @@
+/* ------------------------------------------------
+    --- Header | Mise en page de la balise "<nav>"
+---------------------------------------------------
+
+    1 - Tous les liens sont en noir
+    2 - Les liens ne sont pas souligné
+    3 - Ils sont affichés en ligne grâce à la propriété "display"
+    4 - Ils sont centré sur la page
+    5 - Vous pouvez attribuer une couleur au passage de la souris (hover).
+    6 - Pareil pour le ".current"
+    7 - Vous utiliserez une police différente. Par ex. Roboto Condensed
+
+*/
+
+header {
+    width: 100%;
+    height: 359px;
+    background: url(../img/bandeau-isen.jpg);
+    background-size: cover;
+    position: relative;
+    img {
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+    }
+}

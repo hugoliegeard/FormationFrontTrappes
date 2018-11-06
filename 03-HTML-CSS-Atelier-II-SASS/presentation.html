@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permet d'initialiser le zoom des navigateurs à 100% utile pour le RWD. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bloquer la compatibilité IE : https://bit.ly/2p43XaE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Feuilles de Styles -->
+    <link rel="stylesheet" href="./dist/css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <title>ISEN : Ecole d'Ingénieur</title>
+</head>
+<body>
+    <div class="page center">
+
+        <!-- #### | HEADER | #### -->
+        <header>
+            <p>ISEN : All is Digital - Ecole d'Ingéniérie Informatique</p>
+            <div class="nav-customer">
+                <p>
+                    Espace Clients :
+                    <a href="#">Connexion</a> | <a href="#">Inscription</a>
+                </p>
+            </div>
+            <div class="nav-main">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="./dist/img/isen-groupe.jpg" alt="Logo ISEN">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li class="current"><a href="presentation.html">Présentation</a></li>
+                        <li><a href="#">Nos Formations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- /.nav-main -->
+        </header>
+    </div> <!-- /.page -->
+
+    <!-- #### | PROJECTEUR | #### -->
+    <div class="projecteur">
+        <img src="./dist/img/bandeauDuHaut.jpg" alt="Découvrir ISEN">
+    </div>
+
+    <!-- #### | CONTENT | #### -->
+    <div class="page center">
+        <section class="content">   
+            <article>
+                    <p>Les trois cycles post-bac (années 1, 2 et 3) permettent de suivre un <strong>enseignement généraliste, spécialisé en Informatique et Réseaux ou en lien avec la biologie</strong>.</p><p>En années 4 et 5, les étudiants choisissent parmi les 9 domaines professionnels&nbsp;proposés sur le campus ou <strong>l’une des 40 spécialités proposées</strong> sur l’un des campus ISEN ou dans une école Yncréa.</p><p>L’ISEN Lille est une école d’ingénieur reconnu comme étant un Etablissement d’Enseignement Supérieur Privé reconnu d’Intérêt Général (EESPIG). Disposant de l’habilitation de la&nbsp;<a href="http://www.cti-commission.fr" target="_blank" rel="noopener noreferrer">CTI</a>, membre de la&nbsp;<a href="http://www.cge.asso.fr" target="_blank" rel="noopener noreferrer">CGE</a>, de la&nbsp;<a href="http://www.fesic.org" target="_blank" rel="noopener noreferrer">Fésic</a>&nbsp;et membre fondateur d’<a href="http://yncrea.fr" target="_blank" rel="noopener noreferrer">Yncréa</a>.</p><p><a href="https://www.isen.fr/formation/formation-post-bac/">Trois&nbsp;cursus Post-Bac</a> sont ouverts aux étudiants à L’ISEN, école d’ingénieurs à Lille&nbsp;:</p><ul><li>Cycle Généraliste</li><li>Cycle Informatique et Réseaux</li><li>Cycle Numérique et Biologie en partenariat avec <a href="https://www.isa-lille.fr" target="_blank" rel="noopener">ISA-Lille</a></li></ul><p>L’établissement accueille plus de 700 étudiants sur son campus de centre-ville, dans le quartier Vauban. À deux pas de l’ISEN, la résidence Denis Reille propose des studios en priorité aux élèves-ingénieurs.</p>
+            </article>
+        </section>
+
+        <!-- #### | PARTENAIRES | #### -->
+        <section class="partners">
+            <h2>Nos Partenaires</h2>
+            <ul>
+                <li><img src="./dist/img/logos/cp11.jpg" alt="Logo 1"></li>
+                <li><img src="./dist/img/logos/fond_norbert_segard.jpg" alt="Logo 2"></li>
+                <li><img src="./dist/img/logos/frenchtech.jpg" alt="Logo 3"></li>
+                <li><img src="./dist/img/logos/logo_cge_web.jpg" alt="Logo 4"></li>
+            </ul>
+        </section>
+    </div> <!-- /.page -->
+
+    <!-- #### | FOOTER | #### -->
+
+    <footer>
+        <div class="page center">
+            <!-- Google Maps -->
+            <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d614.6501996998304!2d3.048813763835655!3d50.63374314392794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d578da129f7d%3A0xd134d73fb7f4c699!2sISEN+Lille!5e0!3m2!1sfr!2sfr!4v1537797986889"
+                    width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+
+            <!-- Inscription à la Newsletter -->
+            <section>
+                <form name="NomDuFormulaire" method="POST" action="FichierChargerDuTraitementDesDonnees.php">
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <input type="email" placeholder="Saisissez votre email.">
+                        <input type="text" placeholder="Saisissez votre prenom.">
+                        <input type="text" placeholder="Saisissez votre nom.">
+                        <input type="submit" value="M'inscrire !">
+                    </fieldset>
+                </form>
+            </section>
+
+            <!-- Coordonnées de Contact -->
+            <section>
+                <h3>Contactez-nous</h3>
+                <address>
+                    <strong>ISEN</strong><br>
+                    <a href="tel:+33320304050">03 20 30 40 50</a><br>
+                    <a href="mailto:contact@isen.fr">contact(@)isen.fr</a><br>
+                    41 Boulevard VAUBAN <br>
+                    59000 Lille <br>
+                    FRANCE
+                </address>
+            </section>
+        </div> <!-- /.page -->
+    </footer>
+
+</body>
+</html>

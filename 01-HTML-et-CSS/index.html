@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- La balise "html" contient l'ensemble de ma page. -->
+<html>
+<!-- La balise "head" contient l'entête de ma page. -->
+
+<head>
+    <!-- Permet de préciser l'encodage de la page, pour les accents. -->
+    <meta charset="utf-8">
+    <!-- Titre de ma page -->
+    <title>Atelier 01 - HTML et CSS</title>
+    <!-- Normalize.css | https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- J'importe ma feuille de styles CSS après normalize.css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<!-- Dans la balise "body", le contenu de notre page. -->
+
+<body>
+    <main>
+
+        <!-- En-tête du site -->
+        <header>
+            <a href="index.html">
+                <img src="./img/logoIsen.png" alt="Logo ISEN">
+            </a>
+        </header>
+
+        <!-- Emmet : nav>ul>li.current>a[href=#]{Lien $}+li*2>a[href=#]{Lien $} -->
+        <!-- Menu du site -->
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Accueil</a></li>
+                <li><a href="#">Présentation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenu du site -->
+        <section>
+            <h1>Devenez Ingénieur ISEN !</h1>
+            <aside>
+                <img src="./img/apprentissage.jpg" alt="Apprenez un Métier à l'ISEN">
+            </aside>
+            <article>
+                <p>Les formations d’ingénieur en alternance au sein de l’ISEN peuvent se faire en contrat d’apprentissage ou en contrat de professionnalisation. Dans les deux cas, l’étudiant bénéficie d’un contrat de travail avec l’entreprise qui l’accueille,
+                    d’une rémunération et d’une prise en charge du coût de sa formation.</p>
+                <p><strong>Contrats d'apprentissage</strong></p>
+                <p>Les 3 campus de Lille, Brest et Toulon proposent des formations par l'apprentissage. Retrouvez ces formations et les conditions d'admissions directement sur les pages des campus.</p>
+            </article>
+        </section>
+
+        <!-- Pied de page -->
+        <footer>
+
+            <!-- Google Maps -->
+            <section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d614.6501996998304!2d3.048813763835655!3d50.63374314392794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d578da129f7d%3A0xd134d73fb7f4c699!2sISEN+Lille!5e0!3m2!1sfr!2sfr!4v1537797986889"
+                    width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+
+            <!-- Inscription à la Newsletter -->
+            <section>
+                <form name="NomDuFormulaire" method="POST" action="FichierChargerDuTraitementDesDonnees.php">
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <input type="email" placeholder="Saisissez votre email.">
+                        <input type="text" placeholder="Saisissez votre prenom.">
+                        <input type="text" placeholder="Saisissez votre nom.">
+                        <input type="submit" value="M'inscrire !">
+                    </fieldset>
+                </form>
+            </section>
+
+            <!-- Coordonnées de Contact -->
+            <section>
+                <h3>Contactez-nous</h3>
+                <address>
+                    <strong>ISEN</strong><br>
+                    <a href="tel:+33320304050">03 20 30 40 50</a><br>
+                    <a href="mailto:contact@isen.fr">contact(@)isen.fr</a><br>
+                    41 Boulevard VAUBAN <br>
+                    59000 Lille <br>
+                    FRANCE
+                </address>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>

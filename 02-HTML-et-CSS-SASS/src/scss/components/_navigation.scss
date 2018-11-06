@@ -1,0 +1,32 @@
+nav {
+    text-align: center;
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        display: inline-block;
+        padding: 0 4rem;
+        &.current a {
+            color: $clr-primary;
+            font-weight: bold;
+        }
+    }
+    a {
+        /* Le mot clé de la couleur */
+        color: black;
+        /* Notation Hexadécimale */
+        color: #000000;
+        color: #000;
+        /* Notation Décimale */
+        color: rgb(0, 0, 0);
+        /* Gérer le soulignement du texte */
+        text-decoration: none;
+        font-family: $ff-primary;
+        text-transform: uppercase;
+        font-size: $fs-large;
+        &:hover {
+            color: $clr-primary;
+        }
+    }
+}

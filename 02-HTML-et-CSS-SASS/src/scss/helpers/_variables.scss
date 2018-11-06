@@ -1,0 +1,36 @@
+/* ------------------------------------------------
+                    --- Variables
+---------------------------------------------------*/
+
+/* 
+    Déclarer une variable en SASS.
+    NOTA BENE : C'est vous qui choisissez votre convention
+    de nommage. Adoptez une convention qui soit claire et
+    compréhensible rapidement.
+*/
+$clr-primary: #DD0613;
+
+/*
+    Je peux grâce à la fonction "lighten" obtenir 
+    plusieurs variations de couleurs plus claire.
+    --
+    La fonction "darken" me permet de faire la même
+    chose, mais en sens inverse.
+*/
+$clr-gray-base: #000;
+$clr-gray-dark: lighten($clr-gray-base,20%); // #333333
+$clr-gray: lighten($clr-gray-base,50%); // gray
+$clr-gray-light: lighten($clr-gray-base,70%); // #B3B3B3
+$clr-gray-lighter: lighten($clr-gray-base,90%); // #e6e6e6
+$clr-gray-lightest: lighten($clr-gray-base,95%); // #f2f2f2
+
+// -- Famille de Polices
+$ff-primary: 'Roboto Condensed', sans-serif;
+$ff-secondary: Arial, Helvetica, sans-serif;
+
+// -- Tailles des Polices
+$fs-largest: 3rem;
+$fs-large: 2rem;
+$fs-base: 1.6rem;
+$fs-small: 1.5rem;
+$fs-smallest: 1.4rem;
